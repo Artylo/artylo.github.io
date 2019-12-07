@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: 'highvoltageregular';
+    src: url('https://artylo.github.io/fonts/highvoltage-webfont.woff2') format('woff2'),
+         url('https://artylo.github.io/fonts/highvoltage-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	background-color: black;
+}
+h1
+{
+	font-family: 'highvoltageregular', Arial, sans-serif;
+	color: white;
+}
+h2
+{
+	color: white;
+}
+h3
+{
+	color: white;
+}
+
+ /* Unvisited Link */
+a:link {
+  color: white;
+}
+
+/* Visited Link */
+a:visited {
+  color: darkgray;
+}
+
+/* Mouse over Link */
+a:hover {
+  color: lightgray;
+}
+
+/* Selected Link */
+a:active {
+  color: gray;
+} 
