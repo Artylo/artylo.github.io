@@ -10,34 +10,37 @@ body
 }
 h1
 {
-	font-family: 'highvoltageregular', Arial, sans-serif;
+	font-family: 'highvoltage', Arial, sans-serif;
 	color: white;
 }
 h2
 {
+	font-family: 'highvoltage', Arial, sans-serif;
 	color: white;
 }
 h3
 {
+	font-family: 'highvoltage', Arial, sans-serif;
 	color: white;
 }
 
  /* Unvisited Link */
 a:link {
-  color: white;
+	font-family: 'highvoltage', Arial, sans-serif;
+	color: white;
 }
 
 /* Visited Link */
 a:visited {
-  color: darkgray;
+	color: darkgray;
 }
 
 /* Mouse over Link */
 a:hover {
-  color: lightgray;
+	color: lightgray;
 }
 
 /* Selected Link */
 a:active {
-  color: gray;
+	color: gray;
 } 
