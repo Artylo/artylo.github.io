@@ -1,10 +1,7 @@
 
 @font-face {
-    font-family: 'highvoltageregular';
-    src: url('https://artylo.github.io/fonts/highvoltage-webfont.woff2') format('woff2'),
-         url('https://artylo.github.io/fonts/highvoltage-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'highvoltage';
+    src: url('https://artylo.github.io/font/HighVoltage.ttf');
 }
 
 body
