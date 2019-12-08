@@ -23,6 +23,16 @@ h3
 	font-family: 'highvoltage', Arial, sans-serif;
 	color: white;
 }
+h4
+{
+	font-family: 'highvoltage', Arial, sans-serif;
+	color: white;
+}
+p
+{
+	font-family: 'highvoltage', Arial, sans-serif;
+	color: white;
+}
 
  /* Unvisited Link */
 a:link {
@@ -54,11 +64,11 @@ a:active {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
 /* Change the color of links on hover */
@@ -71,4 +81,16 @@ a:active {
 .topnav a.active {
   background-color: darkgray;
   color: white;
+}
+
+.topnav a.toRight {
+   float: right;
+}
+.topnav a.toLeft {
+   float: left;
+}
+.topnav a.toCenter {
+	transform: translate(50%,0);
+	text-align: center;
+	display: inline-block;
 }
