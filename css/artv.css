@@ -79,7 +79,8 @@ a:active {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: darkgray;
+  background-color: black;
+  border: 3px solid #3333;
   color: white;
 }
 
@@ -88,9 +89,15 @@ a:active {
 }
 .topnav a.toLeft {
    float: left;
+   padding: 6px 6px;
+   margin-left: 4px;
 }
 .topnav a.toCenter {
-	transform: translate(50%,0);
+	transform: translate(100%);
 	text-align: center;
 	display: inline-block;
+}
+.copyright p
+{
+	color: #0f0f0f;
 }
