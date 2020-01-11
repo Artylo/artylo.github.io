@@ -35,7 +35,7 @@
 		<img src = "img/android-chrome-192x192.png" alt = "ArtyloTV">
 		<h1> Artylo - Official Website </h1>
 		<h3>Welcome to my shitty excuse to learn HTML and CSS again!</h3>
-		<p>Changelog: Twitch Embeds, Navigation Menu, Churchcast Multi-view</p>
+		<p>Changelog: Twitch Embed Now Scales with Screen, Automatic Footer Updates</p>
 		
 		
 		<!-- Twitch Embed -->
@@ -46,7 +46,7 @@
 		<script src = "https://embed.twitch.tv/embed/v1.js"></script>
 		<script type = "text/javascript">
 			new Twitch.Embed("twitch-embed", {
-				width: 1200,
+				width: "60%",
 				height: 480,
 				channel: "artylotv",
 				theme: "dark",
@@ -60,7 +60,7 @@
 		-->
 		
 		<div class = "copyright">
-			<p>Copyright © Artylo 2019</p>
+			<p>Copyright © Artylo 2019-<script>document.write(new Date().getFullYear())</script></p>
 		</div>
 		
 		</center>
