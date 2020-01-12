@@ -33,6 +33,12 @@ p
 	font-family: 'highvoltage', Arial, sans-serif;
 	color: white;
 }
+span
+{
+	font-family: 'highvoltage', Arial, sans-serif;
+	color: white;
+	font-size: 36px;
+}
 
  /* Unvisited Link */
 a:link {

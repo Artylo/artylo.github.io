@@ -34,9 +34,58 @@
 		
 		<img src = "img/android-chrome-192x192.png" alt = "ArtyloTV">
 		<h1> Artylo - Official Website </h1>
-		<h3>Welcome to my shitty excuse to learn HTML and CSS again!</h3>
+		<!--<h3>Welcome to my shitty excuse to learn HTML and CSS again!</h3>-->
 		<p>Changelog: Twitch Embed Now Scales with Screen, Automatic Footer Updates</p>
 		
+		<!-- Timer -->
+		<script type = "text/javascript">
+		
+		  var dAte = new Date;
+		  var localTime;
+		  var localOffset;
+		  var utc;
+		   localTime = dAte.getTime();
+		   localOffset = dAte.getTimezoneOffset() * 60000;
+		   utc = localOffset + localTime;
+		  
+		  
+		  var start = new Date(utc);
+		  start.setHours(20, 0, 0); // 11pm
+		  //document.writeln("Start time today is:"+start.toLocaleString()+"<br>");
+
+		  function pad(num) {
+			return ("0" + parseInt(num)).substr(-2);
+		  }
+
+		  function tick() {
+			var now = new Date();
+			if (now > start) { // too late, go to tomorrow
+			  start.setDate(start.getDate() + 1);
+			}
+			var remain = ((start - now) / 1000);
+			var hh = pad((remain / 60 / 60) % 60);
+			var mm = pad((remain / 60) % 60);
+			var ss = pad(remain % 60);
+			
+			
+			
+			if (hh > 20 && hh < 24)
+			{
+				document.getElementById('time').innerHTML =
+			    "NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss;
+			}
+			else
+			{
+				document.getElementById('time').innerHTML =
+			    "🔴 SHOW IS NOW LIVE ";
+			}
+			setTimeout(tick, 1000);
+		  }
+
+		  document.addEventListener('DOMContentLoaded', tick);
+	
+		</script>
+		<span id='time'></span>
 		
 		<!-- Twitch Embed -->
 		<!--
