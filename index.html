@@ -50,7 +50,7 @@
 		  
 		  
 		  var start = new Date(utc);
-		  start.setHours(20, 0, 0); // 11pm
+		  start.setHours(18, 0, 0); // 6pm
 		  //document.writeln("Start time today is:"+start.toLocaleString()+"<br>");
 
 		  function pad(num) {
@@ -58,7 +58,11 @@
 		  }
 
 		  function tick() {
-			var now = new Date();
+			var currentDate = new Date();
+			     var currentLocalTime = currentDate.getTime();
+		         var currentLocalOffset = currentDate.getTimezoneOffset() * 60000;
+		         var currentUtc = currentLocalTime + currentLocalOffset;
+			var now = new Date(currentUtc);
 			if (now > start) { // too late, go to tomorrow
 			  start.setDate(start.getDate() + 1);
 			}
