@@ -12,6 +12,7 @@ h1
 {
 	font-family: 'highvoltage', Arial, sans-serif;
 	color: white;
+	margin:16;
 }
 h2
 {
@@ -103,7 +104,13 @@ a:active {
 	text-align: center;
 	display: inline-block;
 }
+
+/*Copyright Formating*/
 .copyright p
 {
 	color: #0f0f0f;
+}
+
+.blog iframe{
+	width: 90%;
 }

@@ -21,22 +21,23 @@
 		<div class="topnav">
 			<a class="toLeft active" href="#home"><img src = "img/favicon-32x32.png" alt = "Home"></a>
 			
-			<a class="toRight" href="https://subs.twitch.tv/artylotv">Subscribe</a>
-			<a class="toRight" href="https://www.twitchalerts.com/tip/artylotv">Donate</a>
 			<a class="toRight" href="https://www.patreon.com/artylo">Patreon</a>
+			<a class="toRight" href="https://www.twitchalerts.com/tip/artylotv">Donate</a>
+			<a class="toRight" href="https://subs.twitch.tv/artylotv">Subscribe</a>
 			
 			<a class="toCenter" href="#blog">Blog</a>
 			<a class="toCenter" href="#about">About</a>
 			<a class="toCenter" href="#contact">Contact</a>
-			<a class="toCenter" href="https://www.extra-life.org/participant/ArtyloTV">Extra Life</a>
-			<a class="toCenter" href="https://www.kadgar.net/live/artylotv/tedverse/detective_gravy">The Church</a>
+			<a class="toCenter" href="https://www.youtube.com/channel/UCB8TNWA2FZinx4YxkrFfSMA">Archive</a>
+			<a class="toCenter" href="https://discord.gg/GDPkzXN">Discord</a>
+			<a class="toCenter" href="https://www.kadgar.net/live/artylotv/tedverse/detective_gravy">Churchcast</a>
+			
+			<!-- <a class="toCenter" href="https://www.extra-life.org/participant/ArtyloTV">Extra Life</a> -->
 		</div> 
 		
 		<img src = "img/android-chrome-192x192.png" alt = "ArtyloTV">
 		<h1> Artylo - Official Website </h1>
 		<!--<h3>Welcome to my shitty excuse to learn HTML and CSS again!</h3>-->
-		<p>Changelog: Twitch Embed Now Scales with Screen, Automatic Footer Updates</p>
-		
 		<!-- Timer -->
 		<script type = "text/javascript">
 		
@@ -50,7 +51,7 @@
 		  
 		  
 		  var start = new Date(utc);
-		  start.setHours(18, 0, 0); // 6pm
+		  start.setHours(17, 0, 0); // 18 - No Daylight Savings; 17 - Daylight Savings Time
 		  //document.writeln("Start time today is:"+start.toLocaleString()+"<br>");
 
 		  function pad(num) {
@@ -73,7 +74,7 @@
 			
 			
 			
-			if (hh > 20 && hh < 24)
+			if (hh >= 20 && hh <= 24)
 			{
 				document.getElementById('time').innerHTML =
 			    "🔴 SHOW IS NOW LIVE ";
@@ -92,9 +93,6 @@
 		<span id='time'></span>
 		
 		<!-- Twitch Embed -->
-		<!--
-		<a href = "https://www.twitch.tv/artylotv"> ArtyloTV - Twitch Broadcast </a>
-		-->
 		<div id = "twitch-embed"></div>
 		<script src = "https://embed.twitch.tv/embed/v1.js"></script>
 		<script type = "text/javascript">
@@ -103,7 +101,9 @@
 				height: 480,
 				channel: "artylotv",
 				theme: "dark",
-				layout: "video-with-chat"
+				layout: "video-with-chat",
+				
+				//parent: ["https://artylo.github.io/", "http://localhost:8000", "http://localhost", "http://192.168.100.109", "http://192.168.100.1", "http://127.0.0.1:8000/"]
 			});
 		</script>
 		
@@ -111,6 +111,8 @@
 		<!--
 		<iframe src="https://www.twitch.tv/embed/artylotv/chat" frameborder="1" scrolling="no" height="450" width="450"></iframe>
 		-->
+		
+		<p>[24.07.2020] Changelog: Adjusted Timer for Daylight Savings & Updated Twitch Embed</p>
 		
 		<div class = "copyright">
 			<p>Copyright © Artylo 2019-<script>document.write(new Date().getFullYear())</script></p>
