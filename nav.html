@@ -63,13 +63,11 @@
 				
 				if (hh >= 20 && hh <= 24)
 				{
-					document.getElementById('time').innerHTML =
-					"🔴 ON AIR ";
+					document.getElementById('time2').innerHTML = "🔴 ON AIR ";
 				}
 				else
 				{
-					document.getElementById('time').innerHTML =
-					"NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss;
+					document.getElementById('time2').innerHTML = "NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss;
 				}
 				setTimeout(tick, 1000);
 			  }
@@ -77,7 +75,7 @@
 			  document.addEventListener('DOMContentLoaded', tick);
 		
 			</script>
-			<a id='time' style="margin-top:8px" class="toLeft" href="https://artylo.github.io/live"></a>
+			<a id='time2' style="margin-top:8px" class="toLeft" href="https://artylo.github.io/live"></a>
 			<!-- LIVE ABSURDITY ENDS -->
 			
 			
