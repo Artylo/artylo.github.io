@@ -34,12 +34,7 @@ p
 	font-family: 'highvoltage', Arial, sans-serif;
 	color: white;
 }
-span
-{
-	font-family: 'highvoltage', Arial, sans-serif;
-	color: white;
-	font-size: 36px;
-}
+
 
  /* Unvisited Link */
 a:link {
@@ -111,12 +106,14 @@ a:active {
 	color: #0f0f0f;
 	white-space: nowrap;
 }
-.copyright span
-{
-	color: #0f0f0f;
-	white-space: nowrap;
-}
 
 .blog iframe{
 	width: 90%;
+}
+
+.bigtimer span
+{
+	font-family: 'highvoltage', Arial, sans-serif;
+	color: white;
+	font-size: 36px;
 }
