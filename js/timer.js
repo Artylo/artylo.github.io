@@ -13,11 +13,12 @@ start.setHours(18, 0, 0); // 18 - No Daylight Savings; 17 - Daylight Savings Tim
 
 function pad(num)
 {
-return ("0" + parseInt(num)).substr(-2);
+	return ("0" + parseInt(num)).substr(-2);
 }
 
 function tick()
 {
+	console.log("ENTER TICK");
 	var currentDate = new Date();
 	var currentLocalTime = currentDate.getTime();
 	var currentLocalOffset = currentDate.getTimezoneOffset() * 60000;

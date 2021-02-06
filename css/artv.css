@@ -122,3 +122,10 @@ a:active {
 	color: white;
 	font-size: 36px;
 }
+
+.about h2
+{
+	font-family: 'highvoltage', Arial, sans-serif;
+	color: white;
+	font-size: 22px;
+}
