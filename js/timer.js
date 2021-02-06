@@ -52,4 +52,3 @@ function tick()
 	setTimeout(tick, 1000);
 }
 console.log("EXITED TIMER");
-document.addEventListener('DOMContentLoaded', tick, false);
