@@ -32,7 +32,11 @@
 			<!-- LIVE ABSURDITY -->
 			<!-- Timer -->
 			<a id='time' style="margin-top:8px" class="toLeft" href="https://artylo.github.io/live">ARTV</a>
-			<script>document.addEventListener('DOMContentLoaded', tick);</script>
+			<script>
+				window.setInterval(function() {
+					tick();
+				},1000)
+			</script>
 			<!-- LIVE ABSURDITY ENDS -->
 			
 			
