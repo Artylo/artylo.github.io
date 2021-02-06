@@ -36,6 +36,18 @@ function tick()
 	var ss = pad(remain % 60);
 
 	console.log("NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss);
+	
+	console.log("ENTERED NAV CONDITIONS");			
+	if (hh >= 20 && hh <= 24)
+	{
+		document.getElementById('time2').innerHTML = "🔴 ON AIR ";
+	}
+	else
+	{
+		document.getElementById('time2').innerHTML = "NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss;
+	}
+	console.log("EXITED NAV CONDITIONS");
+	
 	setTimeout(tick, 1000);
 }
 console.log("EXITED TIMER");
