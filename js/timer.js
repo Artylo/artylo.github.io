@@ -1,5 +1,3 @@
-console.log("Start of TIMER");
-
 var dAte = new Date;
 var localTime;
 var localOffset;
@@ -18,14 +16,12 @@ function pad(num)
 
 function tick()
 {
-	console.log("ENTER TICK");
 	var currentDate = new Date();
 	var currentLocalTime = currentDate.getTime();
 	var currentLocalOffset = currentDate.getTimezoneOffset() * 60000;
 	var currentUtc = currentLocalTime + currentLocalOffset;
 	var now = new Date(currentUtc);
 	
-	console.log("TIMEZONES SET");
 	
 	if (now > start)// too late, go to tomorrow
 	{ 
@@ -37,8 +33,7 @@ function tick()
 	var ss = pad(remain % 60);
 
 	console.log("NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss);
-	
-	console.log("ENTERED NAV CONDITIONS");			
+			
 	if (hh >= 20 && hh <= 24)
 	{
 		document.getElementById('time').innerHTML = "🔴 ON AIR ";
@@ -47,8 +42,7 @@ function tick()
 	{
 		document.getElementById('time').innerHTML = "NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss;
 	}
-	console.log("EXITED NAV CONDITIONS");
-	
-	setTimeout(tick, 1000);
 }
+
+console.log("TIMER LOADED");
 
