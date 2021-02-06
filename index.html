@@ -20,9 +20,12 @@
 		<center>
 		
 		<!--Navigation bar-->
-		<div id="nav-placeholder">
-
-		</div>
+		<div id="nav-placeholder"></div>
+		<script>
+		$(function(){
+			$("#nav-placeholder").load("nav.html");
+		});
+		</script>
 		<!--end of Navigation bar-->
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>	
@@ -32,13 +35,10 @@
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		
 		<!-- FOOTER MADNESS -->
-		<div id="foot-placeholder">
-
-		</div>
+		<div id="foot-placeholder"></div>
 
 		<script>
 		$(function(){
-			$("#nav-placeholder").load("nav.html");
 			$("#foot-placeholder").load("foot.html");
 		});
 		</script>
