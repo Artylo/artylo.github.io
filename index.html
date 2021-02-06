@@ -1,0 +1,58 @@
+<HTML>
+	<HEAD>
+		<title> ArtyloTV </title>
+		
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="css/artv.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	</HEAD>
+	<BODY>
+		<center>
+		
+		<!--Navigation bar-->
+		<div id="nav-placeholder">
+
+		</div>
+
+		<script>
+		$(function(){
+		  $("#nav-placeholder").load("nav.html");
+		});
+		</script>
+		<!--end of Navigation bar-->
+
+		
+		<img src = "img/android-chrome-192x192.png" alt = "ArtyloTV">
+		<h1> Artylo - Official Website </h1>
+	
+			<a href="https://artylo.github.io/live"> <h1>LIVE</h1> </a>
+			
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>	
+		
+		<script>
+		var xhr = new XMLHttpRequest;
+		xhr.open('GET', 'changelog.txt', true);
+		xhr.onload = function (){
+			document.write( xhr.responseText );
+		};
+		xhr.send(null);
+		</script>
+
+		
+		<div class = "copyright">
+			<p>Copyright © Artylo 2019-<script>document.write(new Date().getFullYear())</script></p>
+		</div>
+		
+		</center>
+	</BODY>
+</HTML>
