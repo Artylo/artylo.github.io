@@ -39,21 +39,17 @@
 			
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>	
 		
-		<!---
-		<script>
-		var xhr = new XMLHttpRequest;
-		xhr.open('GET', 'changelog.txt', true);
-		xhr.onload = function (){
-			document.write( xhr.responseText );
-		};
-		xhr.send(null);
-		</script>
-		-->
+		<!-- FOOTER MADNESS -->
+		<div id="nav-placeholder">
 
-		
-		<div class = "copyright">
-			<p>Copyright © Artylo 2019-<script>document.write(new Date().getFullYear())</script></p>
 		</div>
+
+		<script>
+		$(function(){
+		  $("#nav-placeholder").load("foot.html");
+		});
+		</script>
+		<!-- END OF FOOTER MADNESS -->
 		
 		</center>
 	</BODY>

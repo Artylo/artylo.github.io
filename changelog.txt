@@ -1,1 +1,0 @@
-[06.02.2021] Changelog: Moved pages for new home page and added global changelog functionality.
