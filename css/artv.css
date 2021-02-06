@@ -109,6 +109,12 @@ a:active {
 .copyright p
 {
 	color: #0f0f0f;
+	white-space: nowrap;
+}
+.copyright span
+{
+	color: #0f0f0f;
+	white-space: nowrap;
 }
 
 .blog iframe{
