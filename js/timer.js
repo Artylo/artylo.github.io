@@ -41,14 +41,15 @@ function tick()
 	console.log("ENTERED NAV CONDITIONS");			
 	if (hh >= 20 && hh <= 24)
 	{
-		document.getElementById('time').innerHTML = "🔴 ON AIR ";
+		window.getElementById('time').innerHTML = "🔴 ON AIR ";
 	}
 	else
 	{
-		document.getElementById('time').innerHTML = "NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss;
+		window.getElementById('time').innerHTML = "NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss;
 	}
 	console.log("EXITED NAV CONDITIONS");
 	
 	setTimeout(tick, 1000);
 }
 console.log("EXITED TIMER");
+window.addEventListener('DOMContentLoaded', tick);
