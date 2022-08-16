@@ -7,7 +7,26 @@ localOffset = dAte.getTimezoneOffset() * 60000;
 utc = localOffset + localTime;
 
 var start = new Date(utc);
-start.setHours(18, 0, 0); // 18 - No Daylight Savings; 17 - Daylight Savings Time
+//var dateFrom = new Date('March 27, 2022 03:00:00'); 
+var dateFrom = new Date();
+//var dateTo = new Date('October 30, 2022 04:00:00');
+var dateTo = new Date();
+
+dateFrom.setMonth(2); // Rough dates and times for Daylight Savings
+dateFrom.setDate(27);
+dateFrom.setHours(3);
+dateTo.setMonth(9);
+dateTo.setDate(30);
+dateTo.setHours(4);
+
+if(start > dateFrom && start < dateTo)
+{
+	start.setHours(17, 0, 0); // 18 - No Daylight Savings; 17 - Daylight Savings Time
+}
+else
+{
+	start.setHours(18, 0, 0); 
+}
 
 function pad(num)
 {
@@ -32,7 +51,7 @@ function tick()
 	var mm = pad((remain / 60) % 60);
 	var ss = pad(remain % 60);
 
-	console.log("NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss);
+	//console.log("NEXT SHOW STARTS IN: "+ hh + ":" + mm + ":" + ss);
 			
 	if (hh >= 20 && hh <= 24)
 	{
@@ -44,5 +63,5 @@ function tick()
 	}
 }
 
-console.log("TIMER LOADED");
+//console.log("TIMER LOADED");
 
